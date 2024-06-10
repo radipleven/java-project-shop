@@ -2,7 +2,7 @@ import java.util.Date;
 //package javatest;
 
 public class Goods {
-    
+
     enum  Category
     {
         EDIBLE,
@@ -20,30 +20,24 @@ public class Goods {
     //id!!!
     public Goods(final String newName, double pr, Category cat, final Date exD, int quantityAvailable)
     {
-        id=globalId++;
-        if (!isValidName(newName))
-        {
+        id = globalId++;
+        isValidName(newName);
+        if (pr <= 0) {
+            throw new IllegalArgumentException("Price must be greater than 0");
         }
-        if (pr<=0) {
-            
-        }
-        // if (/*date validation */) {
-            
-        // }
-        this.name=newName;
-        this.price=pr;
-        this.category=cat;
-        this.expDate=exD;
+        this.name = newName;
+        this.price = pr;
+        this.category = cat;
+        this.expDate = new Date(exD.getTime());
         this.quantityAvailable = quantityAvailable;
-
     }
     public final String getCategory()
     {
         switch (category) {
             case EDIBLE:
-                return "Edible";
+                return "EDIBLE";
             case NONEDIBLE:
-                return "Nonedible";
+                return "NONEDIBLE";
             default:
                 return "";
         }
@@ -62,10 +56,13 @@ public class Goods {
     {
         return name;
     }
-    private Boolean isValidName(final String name)
+    public Date getExpDate() {
+        return new Date(this.expDate.getTime());
+    }
+    private boolean isValidName(final String name)
     {
-        if (name=="" || name==" ") {
-            //throw 
+        if (name == null || name.trim().isEmpty()) {
+            throw new IllegalArgumentException("Name cannot be null or empty");
         }
         return true;
     }
