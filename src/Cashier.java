@@ -30,7 +30,7 @@ public class Cashier {
         }
     }
 
-    private double calculateTotalCost(Map<Goods, Integer> goodsSold) {
+    public double calculateTotalCost(Map<Goods, Integer> goodsSold) {
         double totalCost = 0.0;
         for (Map.Entry<Goods, Integer> entry : goodsSold.entrySet()) {
             totalCost += entry.getKey().getPrice() * entry.getValue();
