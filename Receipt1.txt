@@ -1,6 +1,6 @@
 Receipt ID: 1
-Cashier: testCashier
-Date and Time: 2024-06-11T00:31:44.626389700
+Cashier: John
+Date and Time: 2024-06-11T02:30:02.139234800
 Items: 
-	Item: Apple	Quantity: 2	Price: 1.0
-Total: 2.0
+	Item: Apple	Quantity: 5	Price: 2.5
+Total: 20.0

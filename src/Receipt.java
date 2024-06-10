@@ -28,6 +28,29 @@ public class Receipt {
         this.saveToFile(); // Save receipt content to a file
     }
 
+    public int getId() {
+        return id;
+    }
+    public Cashier getWorker() {
+        return worker;
+    }
+
+    public LocalDateTime getDateTimeOfCreation() {
+        return LocalDateTime.of(dateTimeOfCreation.toLocalDate(), dateTimeOfCreation.toLocalTime());
+    }
+
+    public Map<Goods, Integer> getGoodsSold() {
+        return goodsSold;
+    }
+
+    public double getTotal() {
+        return total;
+    }
+    public static int getGlobalId() {
+        return globalId;
+    }
+
+
     private void saveToFile() {
         try {
             FileWriter writer = new FileWriter("./Receipt" + this.id + ".txt");
@@ -38,6 +61,7 @@ public class Receipt {
         }
     }
 
+
     public static int getTotalReceipts() {
         return totalReceipts;
     }
@@ -45,6 +69,7 @@ public class Receipt {
     public static double getTotalTurnover() {
         return totalTurnover;
     }
+
 
     @Override
     public String toString() {
