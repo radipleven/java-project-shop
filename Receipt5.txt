@@ -1,6 +1,6 @@
 Receipt ID: 5
 Cashier: John
-Date and Time: 2024-06-11T02:30:02.170151400
+Date and Time: 2024-06-11T02:36:31.347338200
 Items: 
 	Item: Apple	Quantity: 5	Price: 2.5
 Total: 20.0

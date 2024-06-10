@@ -1,0 +1,5 @@
+Receipt ID: 8
+Cashier: testCashier
+Date and Time: 2024-06-11T02:36:31.354319600
+Items: 
+Total: 0.0
