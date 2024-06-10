@@ -21,7 +21,33 @@ public class Customer {
             cart.put(goods, quantity);
         }
     }
-
+    public String getName(){
+        return this.name;
+    }
+    public void removeGoodsFromCart(Goods goods, int quantity) {
+        if (cart.containsKey(goods)) {
+            int currentQuantity = cart.get(goods);
+            if (currentQuantity > quantity) {
+                cart.put(goods, currentQuantity - quantity);
+            }
+            else {
+                cart.remove(goods);
+            }
+        }
+    }
+    public int getQuantityInCart(Goods goods) {
+        if (cart.containsKey(goods)) {
+            return cart.get(goods);
+        } else {
+            return 0;
+        }
+    }
+    public String getId(){
+        return this.id;
+    }
+    public boolean isCartEmpty() {
+        return cart.isEmpty();
+    }
     public double getBalance() {
         return balance;
     }
