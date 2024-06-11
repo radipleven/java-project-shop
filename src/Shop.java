@@ -67,16 +67,25 @@ public class Shop {
         this.percentNonedible = percentNonedible;
     }
 
+    public Goods getGoodsFromShelf(int index) {
+        // make sure to add validation if index can be out of bounds
+        return this.storeShelf[index];
+    }
+
+    public int getPercentEdible() {
+        return this.percentEdible;
+    }
+
+    public int getPercentNonedible() {
+        return this.percentNonedible;
+    }
+
     public int getNumOfCashiers() {
         return cashiers.length;
     }
 
     public int getNumOfGoodsOnShelf() {
-        int total = 0;
-        for (int count : countOfGoods) {
-            total += count;
-        }
-        return total;
+        return storeShelf.length;
     }
 
     public void addGoodsToShelf(Goods goods, int quantity) {
