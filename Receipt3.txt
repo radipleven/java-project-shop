@@ -1,6 +1,6 @@
 Receipt ID: 3
-Cashier: John
-Date and Time: 2024-06-12T01:17:20.287145300
+Cashier: Kasier Kasierov
+Date and Time: 2024-06-12T01:46:48.392231400
 Items: 
-	Item: Apple	Quantity: 5	Price: 2.5
-Total: 20.0
+	Item: Toothpaste	Quantity: 1	Price: 1.2
+Total: 1.2

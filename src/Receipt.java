@@ -51,7 +51,7 @@ public class Receipt {
     }
 
 
-    private void saveToFile() {
+    public void saveToFile() {
         try {
             FileWriter writer = new FileWriter("./Receipt" + this.id + ".txt");
             writer.write(this.toString()); // Write receipt content
