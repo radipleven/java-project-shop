@@ -1,6 +1,7 @@
 Receipt ID: 1
 Cashier: Kasier Kasierov
-Date and Time: 2024-06-12T01:46:48.384242600
+Date and Time: 2024-06-12T01:55:49.715059400
 Items: 
+	Item: Eggs	Quantity: 1	Price: 1.5
 	Item: Toilet Paper	Quantity: 1	Price: 0.8
-Total: 0.8
+Total: 2.3

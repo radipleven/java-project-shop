@@ -1,6 +1,7 @@
 Receipt ID: 3
 Cashier: Kasier Kasierov
-Date and Time: 2024-06-12T01:46:48.392231400
+Date and Time: 2024-06-12T01:55:49.724036300
 Items: 
-	Item: Toothpaste	Quantity: 1	Price: 1.2
-Total: 1.2
+	Item: Cheese	Quantity: 1	Price: 2.0
+	Item: Soap	Quantity: 1	Price: 0.4
+Total: 2.4
