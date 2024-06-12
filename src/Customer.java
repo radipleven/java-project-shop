@@ -60,5 +60,5 @@ public class Customer {
         return cart;
     }
 
-    // insert other necessary methods
+
 }

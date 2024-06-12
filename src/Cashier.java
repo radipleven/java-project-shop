@@ -46,5 +46,9 @@ public class Cashier {
         this.assignedRegister = register;
     }
 
-    // other methods as needed
+    public CashRegister getAssignedRegister() {
+        return assignedRegister;
+    }
+
+
 }

@@ -1,5 +1,4 @@
 import java.util.Map;
-import java.util.HashMap;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.time.LocalDateTime;
@@ -25,7 +24,7 @@ public class Receipt {
         Receipt.totalReceipts++; // Increment total number of receipts
         Receipt.totalTurnover += this.total; // Add total to turnover
 
-        this.saveToFile(); // Save receipt content to a file
+        this.saveToFile(); // Save receipt content to file
     }
 
     public int getId() {
@@ -75,14 +74,14 @@ public class Receipt {
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append("Receipt ID: ").append(this.id).append("\n")
-                .append("Cashier: ").append(this.worker.getName()).append("\n") // assuming worker class has a getName() method.
+                .append("Cashier: ").append(this.worker.getName()).append("\n")
                 .append("Date and Time: ").append(this.dateTimeOfCreation.toString()).append("\n")
                 .append("Items: \n");
 
         for (Map.Entry<Goods, Integer> entry : this.goodsSold.entrySet()) {
-            stringBuilder.append("\tItem: ").append(entry.getKey().getName())  // assuming Goods class has a getName() method.
+            stringBuilder.append("\tItem: ").append(entry.getKey().getName())
                     .append("\tQuantity: ").append(entry.getValue())
-                    .append("\tPrice: ").append(entry.getKey().getPrice()) // assuming Goods class has a getPrice() method.
+                    .append("\tPrice: ").append(entry.getKey().getPrice())
                     .append("\n");
         }
 

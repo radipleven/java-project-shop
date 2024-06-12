@@ -1,7 +1,5 @@
 import org.junit.jupiter.api.Test;
-
 import java.util.Date;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class CustomerTest {
@@ -13,10 +11,10 @@ class CustomerTest {
 
         Customer customer = new Customer(validName, validId, initialBalance);
 
-        assertEquals(validName, customer.getName(), "Name was not correctly assigned in Customer constructor");
-        assertEquals(validId, customer.getId(), "Id was not correctly assigned in Customer constructor");
-        assertEquals(initialBalance, customer.getBalance(), "Initial Balance was not correctly assigned in Customer constructor");
-        assertTrue(customer.getCart().isEmpty(), "Cart should be empty on new Customer instance");
+        assertEquals(validName, customer.getName());
+        assertEquals(validId, customer.getId());
+        assertEquals(initialBalance, customer.getBalance());
+        assertTrue(customer.getCart().isEmpty());
     }
 
     @Test
@@ -26,8 +24,8 @@ class CustomerTest {
 
         customer.addGoodsToCart(goods1, 2);
 
-        assertTrue(customer.getCart().containsKey(goods1), "Cart should contain good after adding it");
-        assertEquals(2, customer.getCart().get(goods1).intValue(), "Quantity of added good in cart should be correct");
+        assertTrue(customer.getCart().containsKey(goods1));
+        assertEquals(2, customer.getCart().get(goods1).intValue());
     }
 
     @Test
@@ -37,16 +35,17 @@ class CustomerTest {
 
         customer.subtractBalance(amountToSub);
 
-        assertEquals(50.0, customer.getBalance(), "method subtractBalance should correctly reduce the balance");
+        assertEquals(50.0, customer.getBalance());
     }
+
     @Test
     void testIsCartEmpty() {
         Customer customer = new Customer("Customer1", "Cust1", 100.0);
-        assertTrue(customer.isCartEmpty(), "Cart should be empty after customer creation");
+        assertTrue(customer.isCartEmpty());
 
         Goods goods = new Goods("Goods1", 20.0, Goods.Category.EDIBLE, new Date(), 10);
         customer.addGoodsToCart(goods, 1);
-        assertFalse(customer.isCartEmpty(), "Cart should not be empty after adding goods");
+        assertFalse(customer.isCartEmpty());
     }
 
     @Test
@@ -55,13 +54,13 @@ class CustomerTest {
         Goods goods = new Goods("Goods1", 20.0, Goods.Category.EDIBLE, new Date(), 10);
 
         customer.addGoodsToCart(goods, 5);
-        assertEquals(Integer.valueOf(5), customer.getCart().get(goods), "5 goods should be added to the cart");
+        assertEquals(Integer.valueOf(5), customer.getCart().get(goods));
 
         customer.removeGoodsFromCart(goods, 2);
-        assertEquals(Integer.valueOf(3), customer.getCart().get(goods), "2 goods should be removed from the cart");
+        assertEquals(Integer.valueOf(3), customer.getCart().get(goods));
 
         customer.removeGoodsFromCart(goods, 3);
-        assertFalse(customer.getCart().containsKey(goods), "Goods should be removed completely from the cart");
+        assertFalse(customer.getCart().containsKey(goods));
     }
 
     @Test
@@ -71,7 +70,7 @@ class CustomerTest {
         Goods goods2 = new Goods("Goods2", 30.0, Goods.Category.EDIBLE, new Date(), 5);
 
         customer.addGoodsToCart(goods1, 5);
-        assertEquals(Integer.valueOf(5), customer.getQuantityInCart(goods1), "Quantity of Goods1 in the cart should be 5");
-        assertEquals(Integer.valueOf(0), customer.getQuantityInCart(goods2), "Quantity of Goods2 in the cart should be 0");
+        assertEquals(Integer.valueOf(5), customer.getQuantityInCart(goods1));
+        assertEquals(Integer.valueOf(0), customer.getQuantityInCart(goods2));
     }
 }

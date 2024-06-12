@@ -8,7 +8,7 @@ class ShopTest {
 
     @BeforeEach
     void setUp() {
-        shop = new Shop("Shop1.json"); // change 'test.json' to your JSON file's path
+        shop = new Shop("Shop1.json");
     }
 
     @AfterEach

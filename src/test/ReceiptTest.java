@@ -19,7 +19,7 @@ public class ReceiptTest {
         worker = new Cashier("John", 5000.0);
 
         // initialize 'goods' with Goods.Category.EDIBLE
-        // 'goods' is declared at the class scope
+
         goods = new Goods("Apple", 2.5, Goods.Category.EDIBLE, new Date(System.currentTimeMillis()), 10);
 
         goodsSold = new HashMap<>();

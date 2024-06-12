@@ -1,13 +1,9 @@
-import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Date;
 import java.util.NoSuchElementException;
 import java.util.Objects;
 import org.json.JSONArray;
 import org.json.JSONObject;
-
-import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
@@ -68,7 +64,7 @@ public class Shop {
     }
 
     public Goods getGoodsFromShelf(int index) {
-        // make sure to add validation if index can be out of bounds
+
         return this.storeShelf[index];
     }
 

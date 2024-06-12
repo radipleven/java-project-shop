@@ -31,7 +31,6 @@ public class CashRegister {
             throw new IllegalArgumentException("Customer doesn't have sufficient balance to make the purchase");
         }
 
-        // existing code for selling goods..
 
         if (customer.getBalance() >= totalCost) {
             Receipt receipt = new Receipt(cashier, goodsSold, totalCost);

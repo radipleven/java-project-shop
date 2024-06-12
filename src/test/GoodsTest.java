@@ -1,9 +1,7 @@
 import org.junit.jupiter.api.Test;
-
 import java.util.Date;
-
 import static org.junit.jupiter.api.Assertions.*;
-// import necessary libraries
+
 
 class GoodsTest {
 
@@ -26,7 +24,7 @@ class GoodsTest {
 
     @Test
     void testConstructor_invalidName() {
-        String invalidName = ""; // adjust to what is considered invalid in your application
+        String invalidName = "";
         double expectedPrice = 30.0;
         Goods.Category expectedCategory = Goods.Category.EDIBLE;
         Date expectedDate = new Date();

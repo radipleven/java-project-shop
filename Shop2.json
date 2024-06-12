@@ -1,0 +1,135 @@
+{
+  "shelfSize": 20,
+  "numOfCashiers": 10,
+  "percentEdible": 70,
+  "percentNonedible": 30,
+  "cashiers": [
+    {
+      "name": "Cashier1",
+      "salary": 2000
+    },
+    {
+      "name": "Cashier2",
+      "salary": 2100
+    },
+    {
+      "name": "Cashier3",
+      "salary": 2200
+    },
+    {
+      "name": "Cashier4",
+      "salary": 2300
+    },
+    {
+      "name": "Cashier5",
+      "salary": 2400
+    },
+    {
+      "name": "Cashier6",
+      "salary": 2500
+    },
+    {
+      "name": "Cashier7",
+      "salary": 2600
+    },
+    {
+      "name": "Cashier8",
+      "salary": 2700
+    },
+    {
+      "name": "Cashier9",
+      "salary": 2800
+    },
+    {
+      "name": "Cashier10",
+      "salary": 2900
+    }
+  ],
+  "goods": [
+    {
+      "name": "Apple",
+      "price": 0.5,
+      "category": "edible"
+    },
+    {
+      "name": "Banana",
+      "price": 0.3,
+      "category": "edible"
+    },
+    {
+      "name": "Bread",
+      "price": 1,
+      "category": "edible"
+    },
+    {
+      "name": "Butter",
+      "price": 2.5,
+      "category": "edible"
+    },
+    {
+      "name": "Milk",
+      "price": 0.8,
+      "category": "edible"
+    },
+    {
+      "name": "Eggs",
+      "price": 1.5,
+      "category": "edible"
+    },
+    {
+      "name": "Cheese",
+      "price": 2,
+      "category": "edible"
+    },
+    {
+      "name": "Yogurt",
+      "price": 1.7,
+      "category": "edible"
+    },
+    {
+      "name": "Cleaning Supplies",
+      "price": 3,
+      "category": "nonedible"
+    },
+    {
+      "name": "Laundry Detergent",
+      "price": 5,
+      "category": "nonedible"
+    },
+    {
+      "name": "Soap",
+      "price": 0.4,
+      "category": "nonedible"
+    },
+    {
+      "name": "Body Wash",
+      "price": 4.5,
+      "category": "nonedible"
+    },
+    {
+      "name": "Shampoo",
+      "price": 2.5,
+      "category": "nonedible"
+    },
+    {
+      "name": "Conditioner",
+      "price": 2.7,
+      "category": "nonedible"
+    },
+    {
+      "name": "Toothpaste",
+      "price": 1.2,
+      "category": "nonedible"
+    },
+    {
+      "name": "Toilet Paper",
+      "price": 0.8,
+      "category": "nonedible"
+    },
+    {
+      "name": "Paper Towels",
+      "price": 1.9,
+      "category": "nonedible"
+    }
+  ]
+}

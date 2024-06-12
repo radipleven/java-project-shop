@@ -1,7 +1,6 @@
 Receipt ID: 1
-Cashier: Kasier Kasierov
-Date and Time: 2024-06-12T01:55:49.715059400
+Cashier: testCashier
+Date and Time: 2024-06-12T19:38:06.043285600
 Items: 
-	Item: Eggs	Quantity: 1	Price: 1.5
-	Item: Toilet Paper	Quantity: 1	Price: 0.8
-Total: 2.3
+	Item: Apple	Quantity: 2	Price: 1.0
+Total: 2.0
