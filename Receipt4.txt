@@ -1,6 +1,6 @@
 Receipt ID: 4
-Cashier: Tsvetan Vasilev
-Date and Time: 2024-06-12T19:49:55.724227900
+Cashier: John
+Date and Time: 2024-06-12T20:59:38.191879500
 Items: 
-	Item: Milk	Quantity: 1	Price: 0.8
-Total: 0.8
+	Item: Apple	Quantity: 5	Price: 2.5
+Total: 20.0

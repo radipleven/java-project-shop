@@ -1,6 +1,6 @@
 Receipt ID: 8
 Cashier: testCashier
-Date and Time: 2024-06-12T19:49:41.811193900
+Date and Time: 2024-06-12T20:59:38.228786500
 Items: 
 	Item: Bread	Quantity: 2	Price: 0.8
 	Item: Apple	Quantity: 3	Price: 1.5

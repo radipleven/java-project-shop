@@ -1,8 +1,6 @@
 Receipt ID: 1
-Cashier: Tsvetan Vasilev
-Date and Time: 2024-06-12T19:49:55.715251100
+Cashier: testCashier
+Date and Time: 2024-06-12T20:59:38.149990600
 Items: 
-	Item: Toothpaste	Quantity: 1	Price: 1.2
-	Item: Eggs	Quantity: 1	Price: 1.5
-	Item: Cleaning Supplies	Quantity: 1	Price: 3.0
-Total: 5.7
+	Item: Apple	Quantity: 2	Price: 1.0
+Total: 2.0
