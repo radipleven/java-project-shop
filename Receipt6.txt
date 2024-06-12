@@ -1,6 +1,0 @@
-Receipt ID: 6
-Cashier: John
-Date and Time: 2024-06-12T20:59:38.197864700
-Items: 
-	Item: Apple	Quantity: 5	Price: 2.5
-Total: 20.0

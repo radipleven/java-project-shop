@@ -1,6 +1,0 @@
-Receipt ID: 1
-Cashier: testCashier
-Date and Time: 2024-06-12T20:59:38.149990600
-Items: 
-	Item: Apple	Quantity: 2	Price: 1.0
-Total: 2.0
