@@ -1,6 +1,8 @@
 Receipt ID: 3
-Cashier: John
-Date and Time: 2024-06-12T19:38:06.070214
+Cashier: Tsvetan Vasilev
+Date and Time: 2024-06-12T19:49:55.723230100
 Items: 
-	Item: Apple	Quantity: 5	Price: 2.5
-Total: 20.0
+	Item: Toilet Paper	Quantity: 1	Price: 0.8
+	Item: Eggs	Quantity: 1	Price: 1.5
+	Item: Cleaning Supplies	Quantity: 1	Price: 3.0
+Total: 5.3

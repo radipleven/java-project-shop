@@ -78,7 +78,7 @@ public class Main {
                 };
 
                 // create a cashier
-                Cashier cashier = new Cashier("Yane Yanev", 2000.0);
+                Cashier cashier = new Cashier("Tsvetan Vasilev", 2000.0);
 
                 // each customer enters the shop, interacts with the cashier, buys goods, and then leaves
                 for (Customer customer : customers) {
